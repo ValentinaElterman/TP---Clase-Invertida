@@ -1,8 +1,8 @@
 {
   "name": "api-node-cloud",
   "version": "1.0.0",
-  "description": "TP - Clase Invertida - Elterman Valentina, Severino Ailin, Kohn Ignacio",
-  "main": "index.js",
+  "description": "TP - Clase Invertida - Elterman Valentina, Severino Ailin, Zalucki Sofia",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
