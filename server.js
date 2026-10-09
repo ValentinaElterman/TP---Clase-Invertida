@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 // Endpoint de verificación de estado para el Load Balancer (Health Check)
-app.get('/health', (req, res) => {
+app.get('/health', async (req, res) => {
   const healthStatus = {
     uptime: process.uptime(),
     status: 'UP',
@@ -13,6 +13,7 @@ app.get('/health', (req, res) => {
   };
 
   try {
+    // Si tuvieras conexión a DB la verificarías aquí
     res.status(200).json(healthStatus);
   } catch (error) {
     healthStatus.status = 'DOWN';
